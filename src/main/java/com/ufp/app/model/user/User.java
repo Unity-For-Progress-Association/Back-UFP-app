@@ -26,8 +26,9 @@ public class User {
     private String role;
     @Column(name = "age",nullable = false)
     private int    age;
+    @Lob
     @Column(name = "image",nullable = false)
-    private String image;
+    private byte[] image;
     @Column (name = "gender",nullable = false)
     private Gender gender ;
 }
